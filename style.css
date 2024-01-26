@@ -122,24 +122,13 @@ body {
     }
 
     .profile img {
-        width: 50%;
+        width: 40%;
         height: auto;
     }
 
     .nome {
         font-size: 28px;
     }
-
-    .wrapper {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .wrapper .button a {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
     .text {
         max-width: 100%;
     }
