@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+body {
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    font-family: 'Roboto Slab', serif;
+    color: rgb(31, 91, 31);
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    height: 110vh;
+    justify-content: center;
+}
+
+#relogio {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: rgb(14, 52, 14); 
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+}
+/* Social Media Buttons */
+.wrapper {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.wrapper .button a {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 60px;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: rgb(31, 91, 31);
+}
+
+.wrapper .button a:hover {
+    width: 185px;
+    color: rgb(14, 52, 14);
+    background-color: #e0e5eb;
+}
+
+.wrapper .button a .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 30px;
+    text-align: center;
+    border-radius: 60px;
+    box-sizing: border-box;
+    line-height: 50px;
+}
+
+.wrapper .button a .icon i {
+    font-size: 50px;
+}
+
+.wrapper .button a span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+
+.wrapper .button span {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
+.profile {
+    margin-bottom: 35px;
+}
+.nome{
+    font-size: 35px;
+}
+.text {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+} 
+.text p{
+    word-wrap: break-word;
+}
+
+/* ScrollBar Edition */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b9c2cb;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c8d2db;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E5EBF3;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 50%;
+        height: auto;
+    }
+
+    .nome {
+        font-size: 28px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .wrapper .button a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .text {
+        max-width: 100%;
+    }
+}
